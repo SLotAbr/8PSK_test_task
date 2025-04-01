@@ -29,13 +29,6 @@ async def init_tables():
 		# await conn.run_sync(Base.metadata.drop_all)
 		await conn.run_sync(Base.metadata.create_all)
 
-'''
-TODO:
-
-create the repo and imagine README
-
-send the link to the repo
-'''
 
 # Функция уже присутствует в официальном репозитории, но пакет 0.5.0 не обновлен
 async def get_energy(client: AsyncTron, address: str) -> int:

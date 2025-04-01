@@ -60,12 +60,6 @@ async def test_db_accessibility():
 	assert requestObject != None
 
 
-# pytest -m unit
-# pytest -m "not unit"
-# pytest -m integration
-# pytest -m "not integration"
-
-
 @pytest.mark.integration
 @pytest.mark.asyncio
 async def test_endpoints(client):
